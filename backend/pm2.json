@@ -1,0 +1,12 @@
+{
+  "script": "dist/app.js",
+  "watch": true,
+  "watch_delay": 3000,
+  "ignore_watch": ["tmp", ".idea", "node_modules" , ".git"],
+  "watch_options": {
+    "usePolling": true
+  },
+  "name": "api",
+  "exec_mode" : "cluster",
+  "instances" : "max"
+}
