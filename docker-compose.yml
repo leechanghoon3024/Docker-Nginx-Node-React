@@ -5,13 +5,13 @@ services:
     restart: always
     build:
       context: ./nginx
-      dockerfile: ${DEFAULT_FILE}
+      dockerfile: Dockerfile
     ports:
       - "80:80"
   api:
     build:
       context: ./backend
-      dockerfile: ${DEFAULT_FILE}
+      dockerfile: Dockerfile
     volumes:
       - /app/node_modules
       - ./backend:/app
@@ -19,7 +19,7 @@ services:
   client:
     build:
       context: ./front
-      dockerfile: ${CLIENT_FILE}
+      dockerfile: Dockerfile
     stdin_open: true
     volumes:
       - /app/node_modules

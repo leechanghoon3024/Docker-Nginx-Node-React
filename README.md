@@ -11,7 +11,9 @@ docker-compose -f docker-compose.dev.yml up --build
 if you want background process - 
 
 ```
-docker-compose up -f docker-compose.dev.yml up --d
+docker-compose -f docker-compose.dev.yml up --d
+
+docker-compose -f docker-compose.dev.yml up --build
 ```
 
 After executing the react locally, it is developed in conjunction with api.
