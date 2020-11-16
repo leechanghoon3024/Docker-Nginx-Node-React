@@ -1,6 +1,6 @@
 ####
 ```
-DOCKER  && REACT && NODE  with typesciprt 
+DOCKER  && REACT && NODE  with typesciprt ! 
 ```
 ####
 
